@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  routes: any[] = [
+    {
+      nome: 'Home',
+      path: ''
+    },
+    {
+      nome: 'Login',
+      path: '/login'
+    },
+    {
+      nome: 'Cursos',
+      path: '/cursos'
+    }
+  ]
   title = 'primeiroProjeto';
+  activeTab = this.routes[0];
+  background = '#87eaff';
 }
